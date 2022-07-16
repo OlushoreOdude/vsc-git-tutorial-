@@ -29,11 +29,16 @@ document.getElementById('button').addEventListener('click', (event) => {
 });
 
 
+/*
+function removelist() {
+
+  let testrev = document.getElementById('list');
+}
+/*
 function removelist() {
 
   document.getElementById('button-remove').addEventListener('click', (event) => {
     
     let new_rli = document.getElementById('list');
     new_rli.removeChild(new_rli.lastElementChild);
-}
-}
+});  */
