@@ -7,6 +7,8 @@ function myFunction() {
   }
 }
 
+function addList() {
+  
 function getNumberOrString(value) {
   // Convert a string value to a number if possible
   let number_value = Number(value);
@@ -19,26 +21,29 @@ function getNumberOrString(value) {
 
 
 
-document.getElementById('button').addEventListener('click', (event) => {
-  let element_list = document.getElementById('list');
+document.getElementById('button4').addEventListener('click', (event) => {
+  let element_list = document.getElementById('listpp');
   let new_li = document.createElement('li');
   new_li.innerText = getNumberOrString(document.getElementById('text').value);
 
   element_list.appendChild(new_li);
 
 });
-
+} 
 
 /*
-function removelist() {
 
-  let testrev = document.getElementById('list');
+function getList() {
+
+  let getListA = document.getElementById('list');
 }
-/*
-function removelist() {
 
+*/
+
+function removelist() {
   document.getElementById('button-remove').addEventListener('click', (event) => {
     
-    let new_rli = document.getElementById('list');
+    let new_rli = document.getElementById('listpp');
     new_rli.removeChild(new_rli.lastElementChild);
-});  */
+}); 
+}
